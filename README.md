@@ -8,12 +8,13 @@
 LegacyX/
 ├── contracts/legacyx/      # Soroban Rust smart contract
 ├── backend/                # NestJS + Prisma backend API
-├── src/                    # React + TypeScript + Vite frontend
-│   ├── lib/                # Integration helpers (Stellar, Soroban, Freighter, API)
-│   ├── pages/              # Route-level screens
-│   ├── components/         # UI components
-│   └── mock/               # App state store (with real + mock modes)
-└── public/                 # Static assets
+└── frontend/               # React + TypeScript + Vite frontend
+    ├── src/
+    │   ├── lib/            # Integration helpers (Stellar, Soroban, Freighter, API)
+    │   ├── pages/          # Route-level screens
+    │   ├── components/     # UI components
+    │   └── mock/           # App state store (with real + mock modes)
+    └── public/             # Static assets
 ```
 
 ---
@@ -67,6 +68,7 @@ https://stellar.expert/explorer/testnet/contract/<CONTRACT_ADDRESS>
 ### 1. Frontend
 
 ```bash
+cd frontend
 npm install
 npm run dev
 ```
